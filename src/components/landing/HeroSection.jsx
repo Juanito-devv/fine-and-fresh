@@ -39,13 +39,13 @@ export default function HeroSection() {
             Fine & Fresh.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 pt-2 justify-center lg:justify-start">
-            <a
+            <Link
               href="/#paquetes"
               className="font-label-bold aqua-btn px-9 py-4 rounded-full transition-all duration-300 animate-pulse-glow text-xs md:text-sm tracking-widest font-black inline-flex items-center justify-center gap-2 border border-white/20"
             >
               <span>EXPLORAR TRATAMIENTOS</span>
               <span className="material-symbols-outlined text-lg font-bold">arrow_forward</span>
-            </a>
+            </Link>
             <a
               href={getWhatsAppUrl()}
               target="_blank"

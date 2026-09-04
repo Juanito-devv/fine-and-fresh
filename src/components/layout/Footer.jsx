@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { SITE } from '../../config/site';
 import { getWhatsAppUrl } from '../../utils/whatsapp';
 
@@ -59,11 +60,11 @@ export default function Footer() {
           <div>
             <h4 className="font-label-bold text-xs tracking-widest text-primary mb-5 font-bold">ENLACES</h4>
             <ul className="space-y-3 text-sm text-on-surface-variant">
-              <li><a href="/#servicios" className="hover:text-primary transition-colors">Nuestra Propuesta</a></li>
-              <li><a href="/#paquetes" className="hover:text-primary transition-colors">Tratamientos y Paquetes</a></li>
-              <li><a href="/#proceso" className="hover:text-primary transition-colors">Beneficios Clave</a></li>
-              <li><a href="/#membresias" className="hover:text-primary transition-colors">Membresías</a></li>
-              <li><a href="/agendar" className="hover:text-primary transition-colors">Agendar Cita</a></li>
+              <li><Link href="/#servicios" className="hover:text-primary transition-colors">Nuestra Propuesta</Link></li>
+              <li><Link href="/#paquetes" className="hover:text-primary transition-colors">Tratamientos y Paquetes</Link></li>
+              <li><Link href="/#proceso" className="hover:text-primary transition-colors">Beneficios Clave</Link></li>
+              <li><Link href="/#membresias" className="hover:text-primary transition-colors">Membresías</Link></li>
+              <li><Link href="/agendar" className="hover:text-primary transition-colors">Agendar Cita</Link></li>
             </ul>
             <a
               href={waUrl}
