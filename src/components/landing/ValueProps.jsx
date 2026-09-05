@@ -19,13 +19,13 @@ const pillars = [
     footerIcon: 'auto_fix_high',
   },
   {
-    icon: 'local_cafe',
+    icon: 'local_shipping',
     color: 'secondary',
-    title: 'Comodidad Total',
+    title: 'Servicio a Domicilio',
     description:
-      'Disfruta de nuestra Sala VIP Lounge con barra de café de especialidad, fibra óptica de alta velocidad y vista al estudio, o solicita nuestro servicio de recolección y entrega a domicilio.',
-    footer: 'Experiencia VIP Concierge',
-    footerIcon: 'room_service',
+      'Recolección y entrega de tu vehículo en tu casa u oficina, para que cuides tu tiempo mientras nosotros lo dejamos impecable.',
+    footer: 'Recolección y entrega',
+    footerIcon: 'near_me',
   },
 ];
 
