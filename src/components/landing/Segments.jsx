@@ -25,7 +25,7 @@ const segments = [
       'Facturación fiscal, horarios y servicio in-situ / delivery.',
     ],
     cta: 'SOLICITAR PROPUESTA CORPORATIVA',
-    waText: 'Hola, deseo una propuesta corporativa para nuestra flota',
+    waText: 'Hola, quiero más información acerca de los planes corporativos y las tarifas para flotas, por favor.',
   },
 ];
 
