@@ -164,12 +164,12 @@ export default function HeroSection() {
               <div>
                 <label className="block text-xs font-label-bold text-on-surface-variant mb-2 tracking-widest">FECHA PREFERIDA</label>
                 <div className="relative group">
-                  <span className="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-primary text-lg">calendar_today</span>
+                  <span className="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-primary text-base">calendar_today</span>
                   <input
                     type="date"
                     value={date}
                     onChange={(e) => setDate(e.target.value)}
-                    className="w-full bg-surface-container-low/70 border border-white/10 rounded-xl py-3.5 pl-11 pr-4 text-on-surface focus:border-primary focus:ring-1 focus:ring-primary transition-all outline-none font-body-md text-xs backdrop-blur-sm [color-scheme:dark]"
+                    className="w-full bg-surface-container-low/70 border border-white/10 rounded-xl py-3.5 pl-14 pr-4 text-on-surface focus:border-primary focus:ring-1 focus:ring-primary transition-all outline-none font-body-md text-xs backdrop-blur-sm [color-scheme:dark]"
                   />
                 </div>
               </div>

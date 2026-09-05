@@ -39,9 +39,9 @@ export const services = [
     icon: 'local_car_wash',
     gradient: 'from-sky-300 via-blue-500 to-indigo-600',
     description:
-      'Todo lo de La Bonita más protección anti-ultravioleta, aspirado detallado y brillo extra en rines y cauchos. Incluye plan de fidelidad.',
+      'Servicio La Bonita + protección anti-ultravioleta, aspirado detallado y brillo extra en rines y cauchos. Incluye plan de fidelidad.',
     includes: [
-      'Todo lo de La Bonita',
+      'Servicio La Bonita +',
       'Protector contra rayos UV para tablero y puerta',
       'Aspirado detallado incluyendo área de caucho de repuesto',
       'Abrillantador de rines y silicón para los cauchos',
@@ -55,14 +55,14 @@ export const services = [
     subtitle: 'Experiencia Premium Completa',
     priceCar: 22,
     pricePickup: 24,
-    duration: '2.5 hrs aprox.',
+    duration: '2 hrs aprox.',
     badge: 'PREMIUM COMPLETO',
     icon: 'verified',
     gradient: 'from-amber-300 via-orange-400 to-rose-500',
     description:
-      'El tratamiento completo: todo lo de La Tahona más diagnóstico integral y revisión de todos los fluidos y sistemas del vehículo.',
+      'El tratamiento completo: Servicio La Tahona + diagnóstico integral y revisión de todos los fluidos y sistemas del vehículo.',
     includes: [
-      'Todo lo de La Tahona',
+      'Servicio La Tahona +',
       'Diagnóstico y revisión de todos los fluidos del motor',
       'Revisión de frenos, dirección y refrigerante',
       'Limpiaparabrisas',

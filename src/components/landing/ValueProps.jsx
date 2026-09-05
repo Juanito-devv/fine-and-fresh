@@ -15,7 +15,7 @@ const pillars = [
     highlight: true,
     description:
       'Formulaciones pH neutro seguras para la pintura, descontaminación química férrica, selladores infundidos con grafeno y recubrimientos cerámicos de grado industrial.',
-    footer: 'Protección hasta 36 meses',
+    footer: 'Protección hasta 12 meses',
     footerIcon: 'auto_fix_high',
   },
   {

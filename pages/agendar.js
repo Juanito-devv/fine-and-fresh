@@ -151,8 +151,8 @@ export default function Agendar() {
                   <div>
                     <label className="block text-xs font-label-bold text-on-surface-variant mb-2 tracking-widest">FECHA PREFERIDA</label>
                     <div className="relative">
-                      <span className="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-primary text-lg">calendar_today</span>
-                      <input type="date" value={booking.date} onChange={update('date')} className={`${inputClass} pl-11 [color-scheme:dark]`} />
+                      <span className="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-primary text-base">calendar_today</span>
+                      <input type="date" value={booking.date} onChange={update('date')} className={`${inputClass} pl-14 [color-scheme:dark]`} />
                     </div>
                   </div>
                 </div>

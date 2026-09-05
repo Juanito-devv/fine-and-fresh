@@ -46,7 +46,7 @@ export default function BenefitsSection() {
             <div key={step.number} className={`text-center relative z-10 group ${i % 2 === 1 ? 'mt-0 md:mt-12' : ''}`}>
               <div className="w-32 h-32 mx-auto glass-panel rounded-full flex items-center justify-center mb-8 border border-white/10 group-hover:border-primary/50 transition-all duration-500 shadow-xl group-hover:shadow-primary/30 relative">
                 <div className="absolute inset-0 rounded-full bg-primary/0 group-hover:bg-primary/10 transition-colors duration-500"></div>
-                <span className="material-symbols-outlined text-transparent bg-clip-text bg-gradient-to-br from-white via-primary to-tertiary text-5xl z-10">
+                <span className="material-symbols-outlined text-5xl z-10 text-primary drop-shadow-[0_0_14px_rgba(0,242,254,0.55)]">
                   {step.icon}
                 </span>
               </div>

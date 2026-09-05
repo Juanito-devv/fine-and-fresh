@@ -9,9 +9,9 @@ const segments = [
     items: [
       'Mantén tu auto de uso diario con aroma y aspecto de nuevo.',
       'Protege la pintura original contra el sol abrasador y lluvia ácida.',
-      'Membresías mensuales de mantenimiento con descuento preferencial.',
+      'Plan de fidelidad: paga 4 servicios y la 5.ª visita te sale gratis.',
     ],
-    cta: 'CONOCER PLANES MENSUALES',
+    cta: '',
     waText: 'Hola, deseo conocer las membresias para particulares',
   },
   {
@@ -96,7 +96,7 @@ export default function Segments() {
                   target="_blank"
                   rel="noreferrer"
                   className={`inline-flex items-center gap-2 text-xs font-label-bold transition-colors tracking-widest ${
-                    isPrimary ? 'text-primary hover:text-white' : 'text-tertiary hover:text-white'
+                    seg.cta ? (isPrimary ? 'text-primary hover:text-white' : 'text-tertiary hover:text-white') : 'hidden'
                   }`}
                 >
                   <span>{seg.cta}</span>
