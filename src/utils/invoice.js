@@ -1,5 +1,5 @@
 import { SITE } from '../config/site';
-import { getService, vehicleTypes, modalities } from '../data/services';
+import { getService, vehicleTypes, modalities, getPrice, priceLabel } from '../data/services';
 import { fetchBcvRate, formatVes } from './currency';
 
 function formatDate(dateStr) {
@@ -26,6 +26,7 @@ export async function generateQuotePdf({ booking, total }) {
   const service = getService(booking.serviceId);
   const vehicleType = vehicleTypes.find((v) => v.id === booking.vehicleType);
   const modality = modalities.find((m) => m.id === booking.modality);
+  const price = getPrice(service, booking.vehicleType);
 
   const doc = new jsPDF({ unit: 'mm', format: 'a4' });
   const pageW = doc.internal.pageSize.getWidth();
@@ -96,7 +97,7 @@ export async function generateQuotePdf({ booking, total }) {
     margin: { left: margin, right: margin },
     head: [['Servicio', 'Detalle', 'Duración', 'Inversión ($)']],
     body: service
-      ? [[service.name, service.subtitle, service.duration, money(service.price)]]
+      ? [[service.name, `${service.subtitle}. Precio: ${priceLabel(service)}`, service.duration, money(price)]]
       : [],
     foot: [['', '', 'TOTAL', money(total)]],
     theme: 'striped',

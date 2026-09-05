@@ -1,14 +1,18 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { SITE } from '../../config/site';
-import { services, vehicleTypes, modalities } from '../../data/services';
+import { services, vehicleTypes, modalities, getPrice } from '../../data/services';
 import { getWhatsAppUrl } from '../../utils/whatsapp';
 
 export default function HeroSection() {
-  const [vehicleType, setVehicleType] = useState('sedan');
+  const [vehicleType, setVehicleType] = useState('carro');
   const [serviceId, setServiceId] = useState(services[0].id);
   const [modality, setModality] = useState('sede');
   const [date, setDate] = useState('');
+
+  const activeService = services.find((s) => s.id === serviceId);
+  const activePrice = getPrice(activeService, vehicleType);
+  const activeTypeLabel = vehicleTypes.find((v) => v.id === vehicleType)?.label || '';
 
   const appointmentHref = `/agendar?service=${serviceId}&vehicleType=${vehicleType}&modality=${modality}${
     date ? `&date=${date}` : ''
@@ -127,12 +131,15 @@ export default function HeroSection() {
                 >
                   {services.map((s) => (
                     <option key={s.id} className="bg-surface-container text-white" value={s.id}>
-                      {s.name} (${s.price})
+                      {s.name}
                     </option>
                   ))}
                 </select>
                 <span className="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-primary pointer-events-none">expand_more</span>
               </div>
+              <p className="text-xs text-primary mt-2 tracking-wider">
+                {activeService ? `${activeService.name} · $${activePrice} (${activeTypeLabel.toLowerCase()})` : ''}
+              </p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">

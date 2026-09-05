@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Header from '../src/components/layout/Header';
 import Footer from '../src/components/layout/Footer';
-import { services, vehicleTypes, modalities, getService } from '../src/data/services';
+import { services, vehicleTypes, modalities, getService, getPrice, priceLabel } from '../src/data/services';
 import { SITE } from '../src/config/site';
 import { generateWhatsAppMessage, getWhatsAppUrl } from '../src/utils/whatsapp';
 import { generateQuotePdf } from '../src/utils/invoice';
@@ -16,7 +16,7 @@ export default function Agendar() {
     phone: '',
     email: '',
     serviceId: services[0].id,
-    vehicleType: 'sedan',
+    vehicleType: 'carro',
     modality: 'sede',
     date: '',
   });
@@ -34,7 +34,7 @@ export default function Agendar() {
   }, [router.isReady]);
 
   const service = getService(booking.serviceId);
-  const total = service ? service.price : 0;
+  const total = getPrice(service, booking.vehicleType);
 
   const emailFilled = booking.email.trim().length > 0;
   const emailValid = !emailFilled || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(booking.email.trim());
@@ -125,7 +125,7 @@ export default function Agendar() {
                     <select value={booking.serviceId} onChange={update('serviceId')} className={`${inputClass} pl-12 appearance-none cursor-pointer`}>
                       {services.map((s) => (
                         <option key={s.id} className="bg-surface-container text-white" value={s.id}>
-                          {s.name} (${s.price})
+                          {s.name}
                         </option>
                       ))}
                     </select>
@@ -197,6 +197,12 @@ export default function Agendar() {
                   <div className="flex items-center gap-3 text-on-surface-variant">
                     <span className="material-symbols-outlined text-primary">calendar_today</span>
                     <span>Fecha: {booking.date}</span>
+                  </div>
+                )}
+                {service && (
+                  <div className="flex items-center gap-3 text-on-surface-variant">
+                    <span className="material-symbols-outlined text-primary">sell</span>
+                    <span>Precio {vehicleTypes.find((v) => v.id === booking.vehicleType)?.label.toLowerCase() || ''}: ${getPrice(service, booking.vehicleType)} · {priceLabel(service)}</span>
                   </div>
                 )}
               </div>

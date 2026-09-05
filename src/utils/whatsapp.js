@@ -1,10 +1,11 @@
-import { getService, vehicleTypes, modalities } from '../data/services';
+import { getService, vehicleTypes, modalities, getPrice } from '../data/services';
 import { SITE } from '../config/site';
 
 export function generateWhatsAppMessage(booking, total) {
   const service = getService(booking.serviceId);
   const vehicleType = vehicleTypes.find((v) => v.id === booking.vehicleType);
   const modality = modalities.find((m) => m.id === booking.modality);
+  const price = getPrice(service, booking.vehicleType);
 
   const sep = '──────────────────────────────────';
 
@@ -24,7 +25,7 @@ export function generateWhatsAppMessage(booking, total) {
   lines.push(
     '',
     `Tipo de vehículo: ${vehicleType ? vehicleType.label : '—'}`,
-    `Servicio: ${service ? service.name : '—'} ($${service ? service.price : '—'})`,
+    `Servicio: ${service ? service.name : '—'} ($${price || '—'})`,
     `Modalidad: ${modality ? modality.label : '—'}`,
     `Fecha preferida: ${booking.date || '—'}`,
     ''
