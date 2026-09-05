@@ -45,14 +45,15 @@ export default function Header() {
           ))}
         </div>
 
-        <div className="flex items-center space-x-5 md:space-x-8">
+        <div className="flex items-center space-x-5 md:space-x-9">
           <a
-            className="hidden sm:inline-flex items-center gap-2.5 font-label-bold text-xs tracking-widest text-on-surface hover:text-primary transition-colors"
+            className="hidden sm:inline-flex items-center gap-3 font-label-bold text-xs tracking-widest text-on-surface hover:text-primary transition-colors"
             href={`tel:+58${SITE.whatsappNumber.slice(1)}`}
           >
             <span className="material-symbols-outlined text-base text-primary">call</span>
             <span>+58 {SITE.phoneDisplay}</span>
           </a>
+          <span className="hidden sm:block w-px h-7 bg-primary/25" aria-hidden="true"></span>
           <Link
             href="/agendar"
             className="font-label-bold aqua-btn px-7 md:px-9 py-4 rounded-full shadow-lg hover:shadow-primary/40 transition-all duration-300 text-xs tracking-widest font-black inline-flex items-center gap-2 text-surface-dim border border-white/20"
