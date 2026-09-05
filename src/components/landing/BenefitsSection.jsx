@@ -15,13 +15,14 @@ const steps = [
     icon: 'military_tech',
     number: '03',
     title: 'Detalladores Pro',
-    description: 'Técnicos apasionados con certificación internacional en detailing y restauración.',
+    description: 'Contamos con los mejores productos y la maquinaria perfecta para trabajar.',
   },
   {
     icon: 'verified',
     number: '04',
     title: 'Inspección Rigurosa',
-    description: 'Revisión minuciosa bajo cabina de luces LED de inspección antes de la entrega final.',
+    description:
+      'Diagnóstico, revisión de fluidos/frenos/dirección/refrigerante/limpiaparabrisas y presión de cauchos.',
   },
 ];
 
