@@ -102,11 +102,10 @@ export const services = [
 ];
 
 export const aLaCarta = [
-  { name: 'Detailing a la Carta', price: 40, note: 'Paquete completo para una sola sesión' },
-  { name: 'Solo Asiento', price: 20, note: '' },
-  { name: 'Alfombra', price: 25, note: '' },
-  { name: 'Tablero y Puertas', price: 45, note: '' },
-  { name: 'Hidratación de Cuero', price: 25, note: '' },
+  { name: 'Solo Asiento', price: 40, note: '' },
+  { name: 'Alfombra', price: 20, note: '' },
+  { name: 'Tablero y Puertas', price: 25, note: '' },
+  { name: 'Hidratación de Cuero', price: 45, note: '' },
   { name: 'Restauración de Plástico', price: 25, note: '' },
 ];
 

@@ -19,7 +19,7 @@ export default function ALaCartaSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-4">
           {aLaCarta.map((item) => (
             <div key={item.name} className="glass-panel rounded-2xl p-6 border border-white/10 hover:border-primary/50 hover-lift text-center flex flex-col items-center justify-between transition-all">
               <div className="w-14 h-14 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center mb-4">

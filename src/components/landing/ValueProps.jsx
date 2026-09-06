@@ -23,9 +23,9 @@ const pillars = [
     color: 'secondary',
     title: 'Servicio a Domicilio',
     description:
-      'Recolección y entrega de tu vehículo en tu casa u oficina, para que cuides tu tiempo mientras nosotros lo dejamos impecable.',
-    footer: 'Recolección y entrega',
-    footerIcon: 'near_me',
+      'Vamos a tu casa u oficina a lavar y detallar tu vehículo en tu propia dirección, para que cuides tu tiempo mientras nosotros lo dejamos impecable.',
+    footer: 'Vamos hasta tu puerta',
+    footerIcon: 'home_work',
   },
 ];
 
