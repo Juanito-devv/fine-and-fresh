@@ -5,6 +5,7 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 const navLinks = [
   { label: 'Servicios', href: '/#servicios' },
   { label: 'Paquetes', href: '/#paquetes' },
+  { label: 'Mueblería', href: '/muebleria' },
   { label: 'Proceso', href: '/#proceso' },
   { label: 'Membresías', href: '/#membresias' },
   { label: 'Contacto', href: '/#contacto' },
@@ -32,7 +33,7 @@ export default function Header() {
           </div>
         </Link>
 
-        <div className="hidden lg:flex items-center space-x-10">
+        <div className="hidden lg:flex items-center space-x-6">
           {navLinks.map((link) => (
             <Link
               key={link.href}

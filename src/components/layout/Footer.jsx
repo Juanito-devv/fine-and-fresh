@@ -62,8 +62,10 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-on-surface-variant">
               <li><Link href="/#servicios" className="hover:text-primary transition-colors">Nuestra Propuesta</Link></li>
               <li><Link href="/#paquetes" className="hover:text-primary transition-colors">Tratamientos y Paquetes</Link></li>
+              <li><Link href="/#carta" className="hover:text-primary transition-colors">Detailing a la Carta</Link></li>
+              <li><Link href="/#productos" className="hover:text-primary transition-colors">Productos</Link></li>
+              <li><Link href="/muebleria" className="hover:text-primary transition-colors">Fine & Fresh Mueblería</Link></li>
               <li><Link href="/#proceso" className="hover:text-primary transition-colors">Beneficios Clave</Link></li>
-              <li><Link href="/#membresias" className="hover:text-primary transition-colors">Membresías</Link></li>
               <li><Link href="/agendar" className="hover:text-primary transition-colors">Agendar Cita</Link></li>
             </ul>
             <a

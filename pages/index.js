@@ -2,6 +2,9 @@ import Header from '../src/components/layout/Header';
 import HeroSection from '../src/components/landing/HeroSection';
 import ValueProps from '../src/components/landing/ValueProps';
 import PackagesSection from '../src/components/landing/PackagesSection';
+import ALaCartaSection from '../src/components/landing/ALaCartaSection';
+import ProductsSection from '../src/components/landing/ProductsSection';
+import MuebleriaTeaser from '../src/components/landing/MuebleriaTeaser';
 import BenefitsSection from '../src/components/landing/BenefitsSection';
 import Segments from '../src/components/landing/Segments';
 import HowItWorks from '../src/components/landing/HowItWorks';
@@ -21,6 +24,9 @@ export default function Home() {
         <HeroSection />
         <ValueProps />
         <PackagesSection />
+        <ALaCartaSection />
+        <ProductsSection />
+        <MuebleriaTeaser />
         <BenefitsSection />
         <Segments />
         <HowItWorks />

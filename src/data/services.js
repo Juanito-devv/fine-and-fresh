@@ -5,7 +5,7 @@ export const vehicleTypes = [
 
 export const modalities = [
   { id: 'sede', label: 'Sede Principal (C.C Los Samanes)', icon: 'storefront' },
-  { id: 'domicilio', label: 'A Domicilio', icon: 'home_work' },
+  { id: 'domicilio', label: 'A Domicilio (vamos a tu casa)', icon: 'home_work' },
 ];
 
 export const services = [
@@ -50,8 +50,8 @@ export const services = [
     ],
   },
   {
-    id: 'vip',
-    name: 'VIP',
+    id: 'samanes',
+    name: 'Los Samanes',
     subtitle: 'Experiencia Premium Completa',
     priceCar: 22,
     pricePickup: 24,
@@ -67,8 +67,64 @@ export const services = [
       'Revisión de frenos, dirección y refrigerante',
       'Limpiaparabrisas',
       'Presión de los cauchos',
+      'Plan de fidelidad: paga 4 veces cualquier plan que lo ofrezca y la 5.ª visita te sale gratis',
       'Descuento en aromatizante',
     ],
+  },
+  {
+    id: 'premium',
+    name: 'Detailing Premium Full',
+    subtitle: 'Restauración integral de interiores',
+    priceCar: 80,
+    pricePickup: 100,
+    duration: 'Jornada completa aprox.',
+    badge: 'PREMIUM FULL',
+    icon: 'auto_awesome',
+    gradient: 'from-fuchsia-400 via-purple-500 to-indigo-600',
+    description:
+      'Remozamiento profundo del interior: restauración, hidratación y desinfección de cada superficie de tu vehículo.',
+    includes: [
+      'Limpieza de techo',
+      'Limpieza de alfombra',
+      'Limpieza de asientos',
+      'Limpieza de cristales',
+      'Limpieza de puertas y botones',
+      'Restauración de partes plásticas',
+      'Hidratación de cueros',
+      'Desinfección de cabecera',
+      'Brillo para rines',
+      'Silicón para los cauchos',
+      'Plan de fidelidad: paga 4 veces cualquier plan que lo ofrezca y la 5.ª visita te sale gratis',
+      'Descuento en aromatizante',
+      'Adicional gratis: lavado exterior de champú con cera',
+    ],
+  },
+];
+
+export const aLaCarta = [
+  { name: 'Detailing a la Carta', price: 40, note: 'Paquete completo para una sola sesión' },
+  { name: 'Solo Asiento', price: 20, note: '' },
+  { name: 'Alfombra', price: 25, note: '' },
+  { name: 'Tablero y Puertas', price: 45, note: '' },
+  { name: 'Hidratación de Cuero', price: 25, note: '' },
+  { name: 'Restauración de Plástico', price: 25, note: '' },
+];
+
+export const products = [
+  {
+    name: 'Desengrasante H7',
+    icon: 'science',
+    description: 'Desengrasante de uso profesional para superficies de alto tráfico.',
+  },
+  {
+    name: 'Flamingo',
+    icon: 'spa',
+    description: 'Línea de limpieza y brillo multiusos de aplicación diaria.',
+  },
+  {
+    name: 'Armor All',
+    icon: 'auto_awesome',
+    description: 'Protección y brillo prolongado para interiores y plásticos.',
   },
 ];
 

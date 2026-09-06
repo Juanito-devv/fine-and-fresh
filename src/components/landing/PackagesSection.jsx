@@ -11,12 +11,12 @@ export default function PackagesSection() {
           Nuestros <span className="gradient-text">Servicios</span>
         </h2>
         <p className="font-body-lg text-on-surface-variant mb-12 text-base md:text-lg uppercase tracking-widest">
-          Tres niveles de cuidado para tu vehículo en cada visita
+          Cuatro niveles de cuidado para tu vehículo en cada visita
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 mb-16">
           {services.map((s) => {
-            const isTop = s.id === 'vip';
+            const isTop = s.id === 'samanes';
             const waMessage = `Hola Fine & Fresh, deseo agendar el servicio ${s.name}`;
             return (
               <div
