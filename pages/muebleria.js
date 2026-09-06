@@ -54,7 +54,7 @@ export default function MuebleriaPage() {
                   </li>
                   <li className="flex items-start gap-3 text-sm text-on-surface-variant">
                     <span className="material-symbols-outlined text-secondary mt-0.5">percent</span>
-                    <span>Descuento por doble servicio: aplica % especial al combinar 2 o más piezas en una misma cita.</span>
+                    <span>10% de descuento por doble servicio al combinar 2 o más piezas en una misma cita.</span>
                   </li>
                   <li className="flex items-start gap-3 text-sm text-on-surface-variant">
                     <span className="material-symbols-outlined text-secondary mt-0.5">schedule</span>

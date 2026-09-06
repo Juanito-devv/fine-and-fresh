@@ -17,7 +17,7 @@ export default function MuebleriaTeaser() {
           </h2>
           <p className="font-body-lg text-on-surface-variant mb-8 text-base md:text-lg max-w-2xl mx-auto">
             Detailing profesional para muebles, sillas, colchones, sofás, alfombras y fachadas de
-            inmuebles. Vamos a tu casa u oficina y con doble servicio aplicas descuento especial.
+            inmuebles. Vamos a tu casa u oficina y con doble servicio aplicas 10% de descuento.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
