@@ -10,7 +10,7 @@ const mueblesServices = [
   { icon: 'table_restaurant', label: 'Sillas' },
   { icon: 'bed', label: 'Colchones' },
   { icon: 'weekend', label: 'Sofás' },
-  { icon: 'carpet', label: 'Alfombras' },
+  { icon: 'grid_view', label: 'Alfombras' },
   { icon: 'home', label: 'Fachadas de Inmuebles' },
 ];
 
